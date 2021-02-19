@@ -24,9 +24,12 @@
 	}
 	function clickHandler(e) {
 		console.log(e.target.innerHTML, '클릭됨')
-		var div = document.createElement("div");
+		this.remove();
 		var len = document.getElementsByTagName("div").length;
 		console.log(len + "개 남음");
+		if(len == 0){
+			alert("끝!");
+		}
 		//1to 50 게임 참고
 	}
 </script>
